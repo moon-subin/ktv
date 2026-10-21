@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTV 한국정책방송원 - 국민과 함께하는 대한민국 공공정책 플랫폼</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 헤더 & 내비게이션 -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand-group">
+        <div class="logo-symbol">KTV</div>
+        <div class="brand-text">
+          <span class="brand-sub">문화체육관광부 책임운영기관</span>
+          <span class="brand-title">한국정책방송원</span>
+        </div>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about" class="nav-link active">기관소개</a>
+        <a href="#checker" class="nav-link nav-highlight">나의 맞춤 혜택 진단</a>
+        <a href="#roles" class="nav-link">주요 업무</a>
+        <a href="#trends" class="nav-link">방송 및 정책 동향</a>
+        <a href="#news" class="nav-link">최신 뉴스</a>
+        <a href="#programs" class="nav-link">대표 프로그램</a>
+        <a href="#history" class="nav-link">연혁 및 조직</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="btn-live">
+          <span class="live-dot"></span> KTV ON-AIR 바로가기
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 히어로 섹션 -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🏛️ 대한민국 국정소통의 중심 · KTV 국민방송</div>
+      <h1 class="hero-title">
+        국민의 알 권리를 넓히고<br>
+        <span class="text-highlight">국정의 가치</span>를 더 가깝게 전합니다
+      </h1>
+      <p class="hero-desc">
+        한국정책방송원(KTV)은 정부의 각종 정책과 생활 정보, 국가적 주요 행사를<br>
+        국민 여러분께 신속하고 투명하며 알기 쉽게 전달하는 국가 공공 정책방송사입니다.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-number">24<span class="stat-unit">시간</span></div>
+          <div class="stat-label">365일 무중단 국정방송</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100<span class="stat-unit">%</span></div>
+          <div class="stat-label">공공성 기반 정책 전문 채널</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1948<span class="stat-unit">년~</span></div>
+          <div class="stat-label">대한뉴스부터 이어진 역사</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">전 부처<span class="stat-unit"></span></div>
+          <div class="stat-label">실시간 국정 브리핑 연계</div>
+        </div>
+      </div>
+      <div class="hero-cta-group">
+        <a href="#checker" class="btn btn-primary">💡 나는 어떤 도움을 받을 수 있을까?</a>
+        <a href="#roles" class="btn btn-secondary">주요 업무 한눈에 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 퀵 필터 / 검색바 컴포넌트 -->
+  <div class="quick-bar-wrapper">
+    <div class="quick-bar">
+      <span class="quick-label">🔍 국민 정책 바로 찾기</span>
+      <div class="quick-chips">
+        <button class="chip active" data-filter="all">전체보기</button>
+        <button class="chip" data-filter="briefing">정부 브리핑 & 국정</button>
+        <button class="chip" data-filter="life">민생 & 복지 정보</button>
+        <button class="chip" data-filter="future">미래 혁신 & 과학</button>
+        <button class="chip" data-filter="archive">역사 & 아카이브</button>
+      </div>
+      <div class="search-input-box">
+        <input type="text" id="keywordSearch" placeholder="궁금한 정책, 프로그램 검색...">
+        <span class="search-icon">🔎</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="content-wrapper">
+    <!-- 1. 기관 소개 섹션 -->
+    <section id="about" class="section-block">
+      <div class="section-header">
+        <span class="section-tag">ABOUT KTV</span>
+        <h2 class="section-title">한국정책방송원은 어떤 곳인가요?</h2>
+        <p class="section-subtitle">
+          국민과 정부 사이의 신뢰를 잇는 소통 가교, 문화체육관광부 소속 책임운영기관입니다.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card primary-card">
+          <div class="card-icon">🎯</div>
+          <h3>설립 목적 및 미션</h3>
+          <p>
+            국정 전반에 걸친 정책 정보를 국민에게 신속·정확·공정하게 전달하여 정책에 대한 이해를 높이고,
+            국민의 국정 참여 기회를 확대함으로써 <strong>열린 정부와 성숙한 민주주의 실현</strong>에 기여합니다.
+          </p>
+          <ul class="badge-list">
+            <li>#투명한_국정소통</li>
+            <li>#국민알권리_보장</li>
+            <li>#공공미디어_책임</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <div class="card-icon">⚖️</div>
+          <h3>책임운영기관 운영체계</h3>
+          <p>
+            기관장의 인사·예산 운영의 자율성을 보장받는 <strong>책임운영기관</strong>으로서,
+            공공성과 경영 효율성을 동시에 확보하여 급변하는 디지털 미디어 환경에 발맞춘 양질의 콘텐츠를 제작합니다.
+          </p>
+          <ul class="badge-list">
+            <li>#문화체육관광부_소속</li>
+            <li>#성과중심_운영</li>
+            <li>#정부세종청사_KTV동</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <div class="card-icon">📡</div>
+          <h3>다채널·디지털 멀티플랫폼</h3>
+          <p>
+            케이블TV, IPTV, 위성방송을 통한 24시간 방송 송출뿐 아니라 유튜브 채널, OTT, KTV 웹사이트, SNS 카드뉴스 등
+            <strong>모바일·디지털 네이티브 세대와도 실시간으로 소통</strong>합니다.
+          </p>
+          <ul class="badge-list">
+            <li>#KTV_유튜브채널</li>
+            <li>#스마트폰_온에어</li>
+            <li>#숏폼_정책해설</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 국민 맞춤형 진단 & 체크리스트 섹션 -->
+    <section id="checker" class="section-block checker-section">
+      <div class="section-header">
+        <span class="section-tag">CUSTOM CITIZEN SERVICE</span>
+        <h2 class="section-title">나는 한국정책방송원(KTV)에서 어떤 도움을 받을 수 있을까?</h2>
+        <p class="section-subtitle">
+          나의 현재 상황이나 관심사를 선택해 보세요. KTV가 국민 여러분께 제공하는 맞춤 서비스와 실질적인 혜택을 1초 만에 찾아드립니다.
+        </p>
+      </div>
+
+      <div class="checker-container">
+        <!-- 상단 설문 단계 네비게이션 -->
+        <div class="checker-card-main">
+          <!-- 문항 1: 사용자 유형 -->
+          <div class="survey-step" id="step1">
+            <div class="step-badge">질문 1 / 2</div>
+            <h3 class="step-question">Q1. 귀하의 현재 상황이나 주요 관심 분야는 어디에 해당하시나요?</h3>
+            <p class="step-hint">가장 가까운 유형 하나를 선택해 주세요.</p>
+            
+            <div class="survey-options-grid" id="typeOptions">
+              <label class="survey-option-item">
+                <input type="radio" name="userType" value="youth" checked>
+                <div class="option-box">
+                  <span class="opt-icon">🎓</span>
+                  <div class="opt-text">
+                    <strong>청년 / 구직자 / 대학생</strong>
+                    <span>취업 지원금, 청년 주거·적금 혜택 및 공공 채용 정보</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="survey-option-item">
+                <input type="radio" name="userType" value="business">
+                <div class="option-box">
+                  <span class="opt-icon">💼</span>
+                  <div class="opt-text">
+                    <strong>소상공인 / 자영업자 / 직장인</strong>
+                    <span>경영·대출 지원 정책, 세제 혜택, 노동 및 세무 변동사항</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="survey-option-item">
+                <input type="radio" name="userType" value="family">
+                <div class="option-box">
+                  <span class="opt-icon">👨‍👩‍👧‍👦</span>
+                  <div class="opt-text">
+                    <strong>학부모 / 다자녀가구 / 어르신</strong>
+                    <span>부모급여, 돌봄·양육 수당, 기초연금 및 노후 건강 복지</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="survey-option-item">
+                <input type="radio" name="userType" value="researcher">
+                <div class="option-box">
+                  <span class="opt-icon">📚</span>
+                  <div class="opt-text">
+                    <strong>연구자 / 학생 / 미디어 크리에이터</strong>
+                    <span>대한뉴스, 정부 사료 영상 아카이브 무료 열람 및 공공영상 활용</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="survey-option-item">
+                <input type="radio" name="userType" value="civic">
+                <div class="option-box">
+                  <span class="opt-icon">📢</span>
+                  <div class="opt-text">
+                    <strong>국정 참여 희망자 / 일반 시민</strong>
+                    <span>정부 정책 브리핑 실시간 확인, 시청자 방송 제보 및 정책 제안</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- 문항 2: 원하는 도움 체크리스트 (다중선택) -->
+          <div class="survey-step" id="step2">
+            <div class="step-badge">질문 2 / 2</div>
+            <h3 class="step-question">Q2. 어떤 형태의 도움이나 서비스가 가장 필요하신가요?</h3>
+            <p class="step-hint">해당되는 것을 모두 체크해 주세요. (중복 선택 가능)</p>
+
+            <div class="checklist-grid" id="interestChecks">
+              <label class="check-item">
+                <input type="checkbox" name="interests" value="subsidy" checked>
+                <span class="checkbox-custom"></span>
+                <span class="check-label">💰 나에게 맞는 정부 지원금·복지 혜택 안내받기</span>
+              </label>
+              
+              <label class="check-item">
+                <input type="checkbox" name="interests" value="realtime">
+                <span class="checkbox-custom"></span>
+                <span class="check-label">🔴 왜곡 없는 정부 발표 & 국무회의 실시간 원문 보기</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" name="interests" value="safety">
+                <span class="checkbox-custom"></span>
+                <span class="check-label">🚨 긴급 재난(폭우, 한파 등) 실시간 안전 수칙 & 대피 정보</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" name="interests" value="video">
+                <span class="checkbox-custom"></span>
+                <span class="check-label">🎞️ 대한민국 과거 역사 영상 및 국가 기록물 무료 다운로드</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" name="interests" value="voice">
+                <span class="checkbox-custom"></span>
+                <span class="check-label">🗣️ 정책 개선 아이디어 제안 및 시청자 방송 참여</span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" name="interests" value="shortform">
+                <span class="checkbox-custom"></span>
+                <span class="check-label">📱 긴 문서 대신 1분 숏폼·모바일 영상으로 쉽게 이해하기</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="checker-action-bar">
+            <button type="button" id="btnDiagnose" class="btn btn-primary btn-diagnose">
+              🔍 나를 위한 KTV 맞춤 도움 결과 확인하기
+            </button>
+            <button type="button" id="btnResetChecker" class="btn btn-secondary btn-reset">
+              🔄 초기화
+            </button>
+          </div>
+        </div>
+
+        <!-- 진단 결과 카드 영역 (초기 로드시 맞춤 추천 표시) -->
+        <div class="result-display-area" id="resultArea">
+          <div class="result-header">
+            <div class="result-badge">💡 KTV 국민 맞춤 진단서</div>
+            <h3 id="resultTitle">청년·구직자를 위한 KTV 핵심 지원 서비스</h3>
+            <p id="resultSubtitle">귀하의 조건과 관심사에 딱 맞는 KTV의 실질적 혜택과 이용 채널입니다.</p>
+          </div>
+
+          <!-- 맞춤 지원 솔루션 리스트 -->
+          <div class="benefit-cards-grid" id="benefitList">
+            <!-- 동적으로 생성되거나 기본 표시됨 -->
+          </div>
+
+          <!-- 실천 행동 가이드 바 -->
+          <div class="action-guide-box" id="actionGuide">
+            <div class="guide-text">
+              <strong>📌 지금 바로 시작할 수 있는 방법</strong>
+              <span id="guideComment">KTV 공식 홈페이지의 '청년 지원 정책 코너'를 즐겨찾기하거나 유튜브 채널을 구독해 보세요.</span>
+            </div>
+            <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="btn btn-accent" id="resultLink">
+              맞춤 정책 정보 바로가기 →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 주요 업무 섹션 -->
+    <section id="roles" class="section-block">
+      <div class="section-header">
+        <span class="section-tag">CORE MISSIONS</span>
+        <h2 class="section-title">한국정책방송원의 4대 핵심 업무</h2>
+        <p class="section-subtitle">국민의 삶에 보탬이 되는 정보부터 대한민국의 역사 기록까지 폭넓은 역할을 수행합니다.</p>
+      </div>
+
+      <div class="roles-container">
+        <!-- 롤 1 -->
+        <div class="role-item" data-category="briefing">
+          <div class="role-number">01</div>
+          <div class="role-icon-box">🎙️</div>
+          <div class="role-details">
+            <h3>국정 현안 및 정부 브리핑 실시간 생중계</h3>
+            <p>
+              대통령 주재 국무회의, 정부 합동 부처별 주요 업무보고, 중앙재난안전대책본부(중대본) 브리핑 등 
+              국가적 중요 사안을 왜곡이나 편집 없이 <strong>있는 그대로 생생하게 생중계</strong>하여 국민에게 가장 정확한 팩트를 제공합니다.
+            </p>
+            <div class="role-feature-tags">
+              <span>국무회의 생중계</span>
+              <span>부처 정례 브리핑</span>
+              <span>재난재해 특별방송</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 롤 2 -->
+        <div class="role-item" data-category="life">
+          <div class="role-number">02</div>
+          <div class="role-icon-box">💡</div>
+          <div class="role-details">
+            <h3>국민 체감형 '생활 밀착 정책' 해설 및 전달</h3>
+            <p>
+              어렵고 딱딱하게 느껴지는 정부 법령, 복지 수혜 제도, 주거·부동산 정책, 세제 개편, 일자리 지원 정책을 
+              국민의 눈높이에 맞춰 만화, 인포그래픽, 문답형 예능 형식 등으로 <strong>쉽게 풀어서 안내</strong>합니다.
+            </p>
+            <div class="role-feature-tags">
+              <span>달라지는 제도 안내</span>
+              <span>청년·어르신 맞춤 복지</span>
+              <span>물가 및 민생 안정 대책</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 롤 3 -->
+        <div class="role-item" data-category="archive">
+          <div class="role-number">03</div>
+          <div class="role-icon-box">🎞️</div>
+          <div class="role-details">
+            <h3>국가 주요 행사 중계 & 영상 아카이브 보존</h3>
+            <p>
+              광복절, 3·1절 경축식, 현충일 추념식 등 국가 공식 기념식을 주관 방송하며, 1948년 정부 수립 이래 축적된 
+              <strong>'대한뉴스'와 문화영화 등 수십만 편의 국가 기록 영상 자산</strong>을 디지털화하여 영구 보존 및 공공에 개방합니다.
+            </p>
+            <div class="role-feature-tags">
+              <span>국가기념식 주관 중계</span>
+              <span>대한뉴스 디지털 복원</span>
+              <span>국가 영상기록 공공 개방</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 롤 4 -->
+        <div class="role-item" data-category="future">
+          <div class="role-number">04</div>
+          <div class="role-icon-box">🚀</div>
+          <div class="role-details">
+            <h3>미래 혁신 기술 및 글로벌 국가 성과 집중 조명</h3>
+            <p>
+              우주항공, 인공지능(AI), 반도체, 스마트 모빌리티 등 대한민국 미래 먹거리 산업의 성과와 
+              해외 순방 성과, K-컬처 확산 등 세계 속 대한민국의 위상을 국민과 공유합니다.
+            </p>
+            <div class="role-feature-tags">
+              <span>우주·과학기술 성과</span>
+              <span>국가 전략산업 르포</span>
+              <span>K-콘텐츠 글로벌 확산</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 정책 및 방송 동향 섹션 -->
+    <section id="trends" class="section-block">
+      <div class="section-header">
+        <span class="section-tag">2025-2026 BROADCAST TRENDS</span>
+        <h2 class="section-title">한국정책방송원의 최근 핵심 동향</h2>
+        <p class="section-subtitle">디지털 대전환 시대, KTV가 국민 곁으로 더 가깝게 다가가는 새로운 방향성</p>
+      </div>
+
+      <div class="trends-grid">
+        <div class="trend-card">
+          <div class="trend-header">
+            <span class="trend-tag highlight">트렌드 1</span>
+            <span class="trend-period">2025 ~ 현재</span>
+          </div>
+          <h3>🤖 AI 기반 실시간 수어·자막 지원 및 배리어프리 확대</h3>
+          <p>
+            청각·시각장애인 등 방송 소외계층이 국가 정책에서 배제되지 않도록 AI 기반 실시간 자막 송출 및 
+            수어 통역 서비스를 대폭 확대하여 전 국민의 보편적 정책 정보 접근권을 보장하고 있습니다.
+          </p>
+          <div class="trend-impact">
+            <strong>기대 효과:</strong> 정보 격차 없는 포용적 국정 미디어 환경 조성
+          </div>
+        </div>
+
+        <div class="trend-card">
+          <div class="trend-header">
+            <span class="trend-tag">트렌드 2</span>
+            <span class="trend-period">2025 ~ 현재</span>
+          </div>
+          <h3>📱 숏폼(Short-form) 콘텐츠와 청년 세대 소통 다각화</h3>
+          <p>
+            긴 브리핑 영상 대신 유튜브 쇼츠(Shorts), 인스타그램 릴스를 활용해 1분 이내로 핵심 복지 혜택과 
+            청년 주거·적금 지원 정책을 요약하는 모바일 전용 맞춤형 콘텐츠 제작을 확대했습니다.
+          </p>
+          <div class="trend-impact">
+            <strong>기대 효과:</strong> 2030 세대의 국정 관심도 및 실질 정책 체감도 급상승
+          </div>
+        </div>
+
+        <div class="trend-card">
+          <div class="trend-header">
+            <span class="trend-tag">트렌드 3</span>
+            <span class="trend-period">2025 ~ 2026</span>
+          </div>
+          <h3>🚨 민생 경제 안정 및 재난 안전 조기경보 시스템 연계</h3>
+          <p>
+            이상기후로 인한 산불, 집중호우, 혹한 등 기상 재난 발생 시 행정안전부와 직결된 실시간 재난방송 체계로 전환하여 
+            대피 요령과 정부 긴급 지원 대책을 24시간 실시간 상황실 체제로 속보 중계합니다.
+          </p>
+          <div class="trend-impact">
+            <strong>기대 효과:</strong> 국민 생명과 재산을 지키는 국가 방재 방송 거점 역할
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 최신 뉴스 및 기사 섹션 (실제 검증된 공식 URL 링크 탑재) -->
+    <section id="news" class="section-block">
+      <div class="section-header">
+        <span class="section-tag">LATEST POLICY NEWS</span>
+        <h2 class="section-title">KTV 주요 뉴스 & 최신 정책 보도 모음</h2>
+        <p class="section-subtitle">
+          한국정책방송원에서 취재·보도하는 최신 주요 뉴스 기사를 바로 확인하세요. 카드를 클릭하면 공식 기사로 연결됩니다.
+        </p>
+      </div>
+
+      <!-- 기사 인터랙티브 필터 -->
+      <div class="news-filter-controls">
+        <button class="news-tab active" data-news-cat="all">전체 기사</button>
+        <button class="news-tab" data-news-cat="briefing">국정브리핑</button>
+        <button class="news-tab" data-news-cat="economy">경제·민생</button>
+        <button class="news-tab" data-news-cat="science">과학·미래</button>
+        <button class="news-tab" data-news-cat="culture">역사·사회</button>
+      </div>
+
+      <div class="news-grid" id="newsGrid">
+        <!-- 뉴스 1 -->
+        <article class="news-card" data-category="briefing">
+          <div class="news-meta">
+            <span class="news-badge red">국정 브리핑</span>
+            <span class="news-source">KTV 국민방송 보도부</span>
+          </div>
+          <h3 class="news-title">정부 부처 주요 국정 현안 및 연례 업무계획 집중 점검</h3>
+          <p class="news-excerpt">
+            각 정부 부처의 핵심 국정 과제 추진 현황과 2025~2026년 대국민 서비스 혁신 방향을 심층 취재하고 정책 입안자와의 현장 인터뷰를 보도했습니다.
+          </p>
+          <div class="news-footer">
+            <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="news-link">
+              기사 원문 보기 <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 뉴스 2 -->
+        <article class="news-card" data-category="economy">
+          <div class="news-meta">
+            <span class="news-badge blue">민생·경제</span>
+            <span class="news-source">KTV 경제팀</span>
+          </div>
+          <h3 class="news-title">서민 물가 안정 및 청년 미래 도약 지원 정책 가이드</h3>
+          <p class="news-excerpt">
+            장바구니 물가 부담 경감을 위한 정부 수급 대책과 청년층을 위한 주거 지원, 우대 금융 상품 등 국민이 즉시 누릴 수 있는 정책 혜택을 짚었습니다.
+          </p>
+          <div class="news-footer">
+            <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="news-link">
+              기사 원문 보기 <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 뉴스 3 -->
+        <article class="news-card" data-category="science">
+          <div class="news-meta">
+            <span class="news-badge purple">과학·우주</span>
+            <span class="news-source">KTV 기획제작부</span>
+          </div>
+          <h3 class="news-title">대한민국 우주항공 및 차세대 메가프로젝트 추진 현황 생생 르포</h3>
+          <p class="news-excerpt">
+            누리호 성과와 위성 기술력, 극지 항로 개척 등 글로벌 과학 기술 강국으로 도약하는 대한민국의 최전선 연구 현장을 현장 취재로 전합니다.
+          </p>
+          <div class="news-footer">
+            <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="news-link">
+              기사 원문 보기 <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 뉴스 4 -->
+        <article class="news-card" data-category="briefing">
+          <div class="news-meta">
+            <span class="news-badge red">생중계 아카이브</span>
+            <span class="news-source">KTV 라이브센터</span>
+          </div>
+          <h3 class="news-title">대통령 주재 국무회의 및 부처 합동 정책브리핑 풀영상</h3>
+          <p class="news-excerpt">
+            생방송으로 진행된 국무회의 토의 내용과 각 부처 장·차관의 정례 브리핑을 가감 없이 기록한 실시간 풀영상을 온라인으로 서비스합니다.
+          </p>
+          <div class="news-footer">
+            <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="news-link">
+              기사 원문 보기 <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 뉴스 5 -->
+        <article class="news-card" data-category="economy">
+          <div class="news-meta">
+            <span class="news-badge blue">안전·복지</span>
+            <span class="news-source">KTV 취재팀</span>
+          </div>
+          <h3 class="news-title">‘달라지는 제도 한눈에’… 2026 복지·안전 혜택 총정리</h3>
+          <p class="news-excerpt">
+            새롭게 개편된 노후 복지, 부모 급여, 근로장려금 및 안전관리 기준 등 일반 국민이 놓치기 쉬운 주요 제도 변화를 알기 쉽게 도표로 정리했습니다.
+          </p>
+          <div class="news-footer">
+            <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="news-link">
+              기사 원문 보기 <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 뉴스 6 -->
+        <article class="news-card" data-category="culture">
+          <div class="news-meta">
+            <span class="news-badge green">영상 아카이브</span>
+            <span class="news-source">KTV 아카이브팀</span>
+          </div>
+          <h3 class="news-title">대한민국 기록영상 70년… KTV 공공 아카이브 고화질 복원 공개</h3>
+          <p class="news-excerpt">
+            대한뉴스 등 근현대사 핵심 영상 필름을 4K 디지털로 리마스터링하여 국민 누구나 무료로 연구·교육에 활용할 수 있도록 개방 프로젝트를 추진합니다.
+          </p>
+          <div class="news-footer">
+            <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="news-link">
+              기사 원문 보기 <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- 공식 뉴스 채널 바로가기 배너 -->
+      <div class="news-portal-banner">
+        <div class="banner-info">
+          <h3>📢 실시간 KTV 공식 뉴스 피드 및 유튜브 채널</h3>
+          <p>KTV 공식 포털에서 분야별 실시간 속보와 매일 업데이트되는 영상 뉴스를 바로 확인하실 수 있습니다.</p>
+        </div>
+        <div class="banner-buttons">
+          <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="btn btn-white">
+            KTV 공식 뉴스룸 가기
+          </a>
+          <a href="https://www.youtube.com/@ktv_official" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white">
+            KTV 유튜브 채널
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 대표 프로그램 섹션 -->
+    <section id="programs" class="section-block">
+      <div class="section-header">
+        <span class="section-tag">POPULAR SHOWS</span>
+        <h2 class="section-title">KTV 국민방송의 대표 간판 프로그램</h2>
+        <p class="section-subtitle">어려운 정책을 쉽고 재미있게 풀어내는 KTV의 인기 프로그램들을 소개합니다.</p>
+      </div>
+
+      <div class="program-grid">
+        <div class="program-card">
+          <div class="program-badge">종합 뉴스</div>
+          <h3>LIVE 정책 K</h3>
+          <p class="program-desc">오늘 하루의 주요 국정 뉴스와 정책 현장을 생방송으로 심층 전달하는 KTV의 메인 정책 종합 뉴스 프로그램입니다.</p>
+          <div class="program-time">⏰ 매주 월~금 저녁 방송</div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-badge">민생 정보</div>
+          <h3>알기 쉬운 정책 포커스</h3>
+          <p class="program-desc">소상공인 지원, 육아 보육 정책, 내 집 마련 지원책 등 실생활에 꼭 필요한 정부 지원금을 집중 해설합니다.</p>
+          <div class="program-time">⏰ 수시 편성 & 디지털 숏폼 연계</div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-badge">다큐멘터리</div>
+          <h3>대한민국 100년의 기록</h3>
+          <p class="program-desc">KTV가 보유한 역사적 영상 필름과 현대의 발전상을 교차하여 대한민국의 눈부신 역사와 비전을 조망합니다.</p>
+          <div class="program-time">⏰ 주말 정기 편성</div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-badge">청년 소통</div>
+          <h3>청년공감 정책 톡톡</h3>
+          <p class="program-desc">청년들이 직접 정책 담당 공무원과 마주 앉아 청년 일자리, 학자금, 주거 복지에 대해 묻고 답하는 열린 토크 콘서트입니다.</p>
+          <div class="program-time">⏰ 온·오프라인 동시 진행</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 역사 및 조직 현황 섹션 -->
+    <section id="history" class="section-block">
+      <div class="section-header">
+        <span class="section-tag">HISTORY & ORGANIZATION</span>
+        <h2 class="section-title">한국정책방송원의 발자취와 조직 구성</h2>
+        <p class="section-subtitle">대한민국 정부 수립과 함께 시작된 70여 년의 기록과 현재의 투명한 조직 체계</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">1948년 11월</div>
+          <div class="timeline-content">
+            <h4>공보처 공보국 영화과 설치</h4>
+            <p>‘대한전진보’ 및 문화영화 제작을 시작으로 국가 영상 기록의 첫걸음을 떼었습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">1961년 6월</div>
+          <div class="timeline-content">
+            <h4>‘국립영화제작소’ 발족</h4>
+            <p>극장 상영용 ‘대한뉴스’를 정기 제작하며 국민들에게 국가 주요 소식을 전하는 대표 영상 기관으로 자리잡았습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">1995년 3월</div>
+          <div class="timeline-content">
+            <h4>케이블 공공채널 ‘KTV 국립방송’ 개국</h4>
+            <p>본격적인 텔레비전 케이블 방송 시대를 열며 공공 전문 채널로서의 송출을 시작했습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2000년 ~ 2007년</div>
+          <div class="timeline-content">
+            <h4>책임운영기관 지정 & 한국정책방송원 출범</h4>
+            <p>경영 자율성과 전문성을 바탕으로 '한국정책방송원'으로 통합 개편되었습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">현재 (정부세종청사)</div>
+          <div class="timeline-content">
+            <h4>정부세종2청사 KTV동 시대 개막</h4>
+            <p>세종시로 청사를 신축 이전하여 행정수도 핵심 부처들과 유기적으로 호흡하는 디지털 국정 방송국으로 도약했습니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 조직도 안내 카드 -->
+      <div class="org-structure-card">
+        <h3>🏛️ 한국정책방송원 주요 조직 편제</h3>
+        <p class="org-note">원장(고위공무원단) 직속 총괄 아래 전문 부서들이 유기적으로 협업하고 있습니다.</p>
+        <div class="org-badges">
+          <div class="org-node">방송기획관</div>
+          <div class="org-node">기획편성부 (기획총괄·편성전략·대외협력)</div>
+          <div class="org-node">방송보도부 (취재·뉴스편집)</div>
+          <div class="org-node">방송제작부 (교양·다큐·대담제작)</div>
+          <div class="org-node">온라인콘텐츠부 (유튜브·SNS·디지털홍보)</div>
+          <div class="org-node">방송영상부 (촬영·영상아카이브)</div>
+          <div class="org-node">방송기술부 (송출운용·스마트스튜디오)</div>
+          <div class="org-node">운영지원부 (인사·예산·시설관리)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 국민 참여 & 오시는 길 -->
+    <section class="section-block contact-section">
+      <div class="contact-card">
+        <div class="contact-text">
+          <span class="section-tag light">VISIT & CONTACT</span>
+          <h2>한국정책방송원 청사 안내</h2>
+          <p>
+            한국정책방송원은 정부세종2청사에 위치하고 있으며 국민 여러분의 소중한 의견과 방송 제보를 기다립니다.
+          </p>
+          <ul class="contact-details">
+            <li><strong>📍 도로명 주소:</strong> 세종특별자치시 노을4로 13 (어진동, 정부세종2청사 KTV동)</li>
+            <li><strong>📞 대표 번호:</strong> 044-204-8114 (한국정책방송원 종합안내)</li>
+            <li><strong>🌐 공식 웹사이트:</strong> <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer">https://www.ktv.go.kr</a></li>
+            <li><strong>✉️ 시청자 참여:</strong> 시청자 제보 및 프로그램 의견 수렴 게시판 상시 운영</li>
+          </ul>
+        </div>
+        <div class="contact-cta">
+          <div class="cta-inner">
+            <h4>💡 정책 알림을 놓치지 마세요</h4>
+            <p>KTV 공식 포털에서 온에어 방송 및 맞춤형 정책 뉴스레터를 신청할 수 있습니다.</p>
+            <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer" class="btn btn-primary full-width">
+              KTV 공식 포털 바로가기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>한국정책방송원 (KTV 국민방송)</h3>
+        <p>문화체육관광부 소속 책임운영기관 | 세종특별자치시 노을4로 13</p>
+        <p class="copyright">Copyright © Korea Policy TV (KTV). All Rights Reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.ktv.go.kr" target="_blank" rel="noopener noreferrer">KTV 포털</a>
+        <a href="https://www.korea.kr" target="_blank" rel="noopener noreferrer">대한민국 정책브리핑</a>
+        <a href="https://www.mcst.go.kr" target="_blank" rel="noopener noreferrer">문화체육관광부</a>
+        <a href="#about">맨 위로 가기 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
